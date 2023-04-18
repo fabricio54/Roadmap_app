@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Roodmap</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .img-logo {
+    margin: 20px 0 0 0;
+        }
+
+        .conf {
+        border-radius: 50%;
+        }
+
+        .titulos {
+        font-size: 1.1em;
+        font-weight: normal;
+        }
+
+        .campos {
+        font-weight: 200;
+        }
+
+        .section-main {
+        background-image: url(https://c1.wallpaperflare.com/preview/959/84/869/agenda-note-book-schedule-planner.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        }
+
+.section-forms {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: auto;
+    width: 400px;
+    height: auto;
+    box-shadow: 2px 2px 1px #6315f559;
+    padding: 20px 20px 0px 20px;
+    border-radius: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+
+.input {
+    position: inherit;
+    width: 99%;
+    font-size: 0.8em;
+    height: 30px;
+}
+
+.input:focus {
+    background-color: blanchedalmond;
+}
+
+.button {
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    align-self: center;
+    margin: 20px;
+}
+
+.button:hover {
+    background-color: #600bfe;
+    color: white;
+}
+
+.button:active {
+    color: rgba(255, 255, 255, 0.685);
+}
+    </style>
+</head>
+
+<body>
+    <section class="section-main">
+        <div class="img-logo">
+            <img src="img/img-logo-pq.png" alt="imagem-logo" class="conf">
+        </div>
+        <div class="section-forms">
+            <form method="post" class="form" action="/">
+                <h2 class="titulos">Dados Pessoais</h2>
+                <p class="campos">Nome: <input type="text" name="nome" id=""class=" input" maxlength="25" placeholder="primeiro" required ></p>
+                <p class="campos sobrenome">Nome Usuario: <input type="text" name="nomeusuario" id=""class="input nomeusuario" placeholder="nome usuario" maxlength="20" required ></p>
+                <h2 class="titulos">Dados da Conta</h2>
+                <p class="campos email">E-mail: <input type="text" name="email" id=""class="input" placeholder="insira email" maxlength="100" required></p>
+                <p class="campos">Senha: <input type="password" name="senha" id=""class="input" placeholder="criar senha" minlength="8" maxlength="15" id="senha"></p>
+                <p class="campos">Confirmar Senha: <input type="password" name="confirmarsenha" class="input " placeholder="confirmar senha" minlength="8" maxlength="15" required></p>
+                <button class="button">finalizar cadastro</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

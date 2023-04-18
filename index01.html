@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pag001.css">
+    <title>Roadmap</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          }
+
+        .section-principal {
+            display: flex;
+            background-image: url(https://c1.wallpaperflare.com/preview/959/84/869/agenda-note-book-schedule-planner.jpg);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /*background-color: #600bfe; */
+            /*background-color: #600bfe33;*/
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .conf {
+            border-radius: 50%;
+        }
+
+        .section-login {
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: auto;
+            width: 400px;
+            height: 400px;
+            box-shadow: 2px 2px 1px #6315f559;
+            padding: 20px 20px 0px 20px;
+            border-radius: 5px; 
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 1.5em;
+            width: 100%;
+                height: auto;
+            gap: 10px;
+        }
+
+        .input {
+            position: inherit;
+            width: 99%;
+            font-size: 0.8em;
+            height: 30px;
+        }
+
+        .input:focus {
+            background-color: blanchedalmond;
+        }
+
+        .button:nth-child(3) {
+            font-size: 0.8em;
+            width: 100%;
+            height: 35px;
+            align-self: center;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #600bfe;
+            color: white;
+        }
+
+        .button:active{
+            color: rgba(255, 255, 255, 0.685);
+        }
+
+        .opction-secund {
+            width: 100%;
+            margin: 50px auto;
+        }
+
+        .opction-secund p {
+            background-color: #600bfe;
+            font-size: 1.5em;
+            text-align: center;
+            margin: -10px 0px 30px 0px;
+            padding: 5px;
+        }
+
+        .opction-secund p > a {
+            text-decoration: none;
+            color: white;
+}
+
+        .opction-secund p > a:active {
+            color: rgba(255, 255, 255, 0.685);
+        }
+
+    </style>
+</head>
+<body>
+    <section class="section-principal">
+        <div class="img-logo">
+            <img src="img/img-logo-pq.png" alt="imagem logo" class="conf">
+        </div>
+        <div class="section-login">
+            <form action="" method="post" class="form">
+                <p>Email:<input type="email" name="nemail" id="iemail" class="input" placeholder="insira o email" autocomplete="email" maxlength="100" required></p>
+                <p>Senha:<input type="password" name="nsenha" id="isenha" class="input" placeholder="insira a senha" minlength="8" maxlength="15" required></p>
+                <button class="button">Entrar</button>
+            </form>
+            <aside class="opction-secund">
+                <p><a href="#">Cadastre-se</a></p>
+                <p><a href="#">Esqueceu a Senha?</a></p>
+            </aside>
+        </div>
+    </section>
+</body>
+</html>
